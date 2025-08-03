@@ -26,7 +26,6 @@
   --color-red-600: #ed4545;
   --color-red-300: #e5303f1a;
 
-
   --border-radius-2xl: 3rem;
   --border-radius-xl: 2rem;
   --border-radius-lg: 1.5rem;
@@ -38,16 +37,16 @@ html {
   font-size: 62.5%;
 }
 
-
 .dashboard__main {
   width: 90vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   font-size: 1.4rem;
+  margin-bottom: 2rem;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .dashboard__main {
     grid-template-columns: 1fr 2fr 2fr;
     width: 80vw;
@@ -63,8 +62,8 @@ html {
   gap: 1.5rem;
   padding: 2rem;
   border-radius: var(--border-radius-xl);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 /* Sidebar Profile */
@@ -72,7 +71,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1.5px solid #E6E6E6;
+  border-bottom: 1.5px solid #e6e6e6;
   padding-bottom: 2rem;
 }
 
@@ -90,7 +89,6 @@ html {
 
 .sidebar__prof__name span {
   color: var(--color-secondary-text);
-
 }
 
 .sidebar__prof__avatar {
@@ -99,7 +97,8 @@ html {
   border-radius: var(--border-radius-lg);
   display: flex;
   align-content: center;
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   transition: all 0.2s ease-out;
 }
 
@@ -151,7 +150,6 @@ html {
   fill: white;
 }
 
-
 .list__item__icon {
   color: black;
   width: 20px;
@@ -178,7 +176,7 @@ html {
   margin-top: 3rem;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .dashboard__sidebar {
     height: 70%;
   }
@@ -188,23 +186,19 @@ html {
   }
 }
 
-
 /* Main Sec */
 
-
 /* infos header */
-
-
 
 .infos__header-mobileTitile {
   display: flex;
   justify-content: space-between;
   margin: 3rem 0;
-  border-bottom: 1.5px solid #E6E6E6;
+  border-bottom: 1.5px solid #e6e6e6;
   padding-bottom: 2rem;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .infos__header-mobileTitile {
     display: none;
   }
@@ -218,7 +212,7 @@ html {
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  border-bottom: 1.5px solid #E6E6E6;
+  border-bottom: 1.5px solid #e6e6e6;
   padding-bottom: 3rem;
   flex-grow: 1;
   margin-bottom: 2rem;
@@ -240,9 +234,9 @@ html {
   scroll-snap-align: start;
   flex-shrink: 0;
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   margin: 1rem 0;
-
 }
 
 .infos__header__sec.active {
@@ -295,8 +289,7 @@ html {
   background-color: var(--color-red-300);
 }
 
-
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .dashboard__infos {
     margin-right: 4rem;
     grid-column: 2/4;
@@ -313,9 +306,6 @@ html {
     padding-left: 4rem;
   }
 }
-
-
-
 
 /* orders Section */
 .order__mode {
@@ -336,7 +326,6 @@ html {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
 }
 
 .infos__orders-sec__order {
@@ -344,10 +333,11 @@ html {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   border-radius: var(--border-radius-md);
   padding: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .order__infos {
@@ -355,7 +345,7 @@ html {
   flex-direction: column;
   justify-content: space-between;
 
-  border-bottom: 1.5px solid #F0F0F0;
+  border-bottom: 1.5px solid #f0f0f0;
   padding-bottom: 1.5rem;
 }
 
@@ -390,7 +380,6 @@ html {
   font-size: 1rem;
 }
 
-
 .order__details {
   background-color: var(--color-gray);
   display: flex;
@@ -406,7 +395,6 @@ html {
   align-items: center;
   max-width: 30%;
   padding-right: 1.5rem;
-
 }
 
 .order__details__img {
@@ -437,7 +425,7 @@ html {
 }
 
 .order__details__img span {
-  background-color: #EAE7E7;
+  background-color: #eae7e7;
   width: 2.5rem;
   height: 2.5rem;
   /* color: var(--color-secondary); */
@@ -464,7 +452,7 @@ html {
   color: var(--color-primary);
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .infos__orders-sec__order {
     padding: 3rem;
   }
@@ -496,5 +484,4 @@ html {
   .order__details__img span {
     display: flex;
   }
-
 }
