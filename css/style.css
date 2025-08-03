@@ -104,11 +104,15 @@ html {
 }
 
 /* Sidebar Menu */
+.sidebar__menu {
+  height: 100%;
+}
 
 .sidebar__menu__list {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
+  height: 100%;
 }
 
 .sidebar__menu__list__item a {
@@ -154,6 +158,11 @@ html {
   margin-top: 3rem;
 }
 
+@media screen and (min-width:768px) {
+  .sidebar__menu__list li:last-child {
+    margin-top: auto;
+  }
+}
 
 
 /* Main Sec */
