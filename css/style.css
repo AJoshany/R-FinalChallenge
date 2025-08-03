@@ -21,6 +21,7 @@
 
   --color-dark: #14151b;
   --color-gray-300: #1717171a;
+  --color-gray-600: #606060;
 
   --color-red-600: #ed4545;
   --color-red-300: #e5303f1a;
@@ -153,11 +154,7 @@ html {
   margin-top: 3rem;
 }
 
-@media screen and (min-width:768px) {
-  .dashboard__sidebar {
-    min-width: 25%;
-  }
-}
+
 
 /* Main Sec */
 
@@ -217,9 +214,20 @@ html {
   border-color: var(--color-primary);
 }
 
+.infos__header__sec__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.infos__header__sec__detail span {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 .infos__header__sec__icon {
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   background-color: var(--color-blue-300);
   display: flex;
   align-items: center;
@@ -228,9 +236,26 @@ html {
 }
 
 .infos__header__sec__icon svg {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
 }
+
+.infos__header__sec:nth-child(2) .infos__header__sec__icon {
+  background-color: var(--color-green-300);
+}
+
+.infos__header__sec:nth-child(2) .infos__header__sec__icon svg {
+  fill: var(--color-green-600);
+}
+
+.infos__header__sec:nth-child(3) .infos__header__sec__icon {
+  background-color: var(--color-gray-300);
+}
+
+.infos__header__sec:nth-child(4) .infos__header__sec__icon {
+  background-color: var(--color-red-300);
+}
+
 
 @media screen and (min-width:768px) {
   .dashboard__infos {
@@ -247,5 +272,160 @@ html {
   .infos__header__sec {
     padding: 2rem;
     padding-left: 4rem;
+  }
+}
+
+
+
+
+/* orders Section */
+.order__mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--color-blue-600);
+  background-color: var(--color-blue-300);
+  width: 15rem;
+  border-radius: var(--border-radius-xl);
+  padding: 0.8rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.infos__orders-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.infos__orders-sec__order {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1.5px solid #E6E6E6;
+  border-radius: var(--border-radius-md);
+  padding: 2rem;
+}
+
+.order__infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5px solid #F0F0F0;
+  padding-bottom: 1.5rem;
+}
+
+.order__infos__right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-weight: 600;
+}
+
+.order__infos__code span:nth-child(1) {
+  color: var(--color-gray-600);
+}
+
+.order__infos__date span:nth-child(1) {
+  color: var(--color-gray-600);
+}
+
+.order__infos__price span:nth-child(1) {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.order__infos__price span:nth-child(2) {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+
+.order__details {
+  background-color: var(--color-gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: var(--border-radius-md);
+}
+
+.order__details__right {
+  display: flex;
+  align-items: center;
+  max-width: 30%;
+  padding-right: 2rem;
+
+}
+
+.order__details__img {
+  min-width: 7rem;
+  min-height: 7rem;
+  background-color: var(--color-white);
+  border: 4px solid var(--color-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-lg);
+  z-index: 1;
+  margin-right: -2rem;
+  transition: transform 0.3s, z-index 0.3s;
+  position: relative;
+}
+
+.order__details__img:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.order__details__img img {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
+}
+
+.order__details__img span {
+  background-color: #EAE7E7;
+  width: 2.5rem;
+  height: 2.5rem;
+  /* color: var(--color-secondary); */
+  border: 1px solid var(--color-secondary);
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.order__details__btn {
+  color: var(--color-primary);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.order__details__btn a {
+  color: var(--color-primary);
+}
+
+@media screen and (min-width:768px) {
+  .order__details__right {
+    max-width: 100%;
+    gap: 1.5rem;
+    padding-right: 0;
+  }
+
+  .order__details__img {
+    margin-right: 0;
+  }
+
+  .order__details__img span {
+    display: flex;
   }
 }
