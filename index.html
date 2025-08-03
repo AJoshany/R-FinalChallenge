@@ -1,104 +1,178 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/fonts.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
 
-    <title>Document</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/fonts.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <body>
-    <main class="dashboard__main">
-      <div class="dashboard__sidebar">
-        <div class="sidebar__profInfo">
-          <div class="sidebar__prof">
-            <div class="sidebar__prof__avatar"></div>
-            <div class="sidebar__prof__name">
-              <p>رضا جنیدی</p>
-              <span>۰۹۱۲۳۴۵۶۷۸۹</span>
-            </div>
+  <title>Document</title>
+</head>
+
+<body>
+  <main class="dashboard__main">
+    <div class="dashboard__sidebar">
+      <div class="sidebar__profInfo">
+        <div class="sidebar__prof">
+          <div class="sidebar__prof__avatar">
+            <i class="fa-regular fa-user"></i>
           </div>
-          <div class="sidebar__prof__edtiBtn"></div>
-        </div>
-        <nav class="sidebar__menu">
-          <ul class="sidebar__menu__list">
-            <li class="sidebar__menu__list__item">
-              <a href="#">
-                <i class="fa-regular fa-house"></i>
-                <p>سفارش های من</p>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="dashboard__infos">
-        <div class="infos__header">
-          <div class="infos__header__sec">
-            <div class="infos__header__sec__icon"></div>
-            <p>در حال پردازش</p>
-            <p>۵ سفارش</p>
-          </div>
-
-          <div class="infos__header__sec">
-            <div class="infos__header__sec__icon"></div>
-            <p>در حال پردازش</p>
-            <p>۵ سفارش</p>
-          </div>
-
-          <div class="infos__header__sec">
-            <div class="infos__header__sec__icon"></div>
-            <p>در حال پردازش</p>
-            <p>۵ سفارش</p>
-          </div>
-
-          <div class="infos__header__sec">
-            <div class="infos__header__sec__icon"></div>
-            <p>در حال پردازش</p>
-            <p>۵ سفارش</p>
+          <div class="sidebar__prof__name">
+            <p>رضا جنیدی</p>
+            <span>۰۹۱۲۳۴۵۶۷۸۹</span>
           </div>
         </div>
-
-        <div class="infos__orders-sec">
-          <div class="infos__orders-sec__order">
-            <div class="order__mode">
-              <p>در حال پردازش</p>
-            </div>
-            <div class="order__infos">
-              <div class="order__infos__right">
-                <div class="order__infos__code">
-                  <span>:کد سفارش</span>
-                  <span>۲۱۶۵۴۴۹</span>
-                </div>
-                <div class="order__infos__date">
-                  <span>:تاریخ تحویل سفارش</span>
-                  <span>۱۴۰۳/۰۵/۰۷</span>
-                </div>
-              </div>
-              <div class="order__infos__price">
-                <span>۱,۵۵۰,۰۰۰</span>
-                <span>تومان</span>
-              </div>
-            </div>
-            <div class="order__details">
-              <div class="order__details__right">
-                <div class="order__details__img">
-                  <img src="" alt="" />
-                </div>
-              </div>
-              <div class="order__details__btn">
-                <i class="fa-solid fa-arrow-left"></i>
-                <a href="#">جزئیات سفارش</a>
-              </div>
-            </div>
-          </div>
+        <div class="sidebar__prof__edtiBtn">
+          <i class="fa-regular fa-pen-to-square"></i>
         </div>
       </div>
-    </main>
-  </body>
+      <nav class="sidebar__menu">
+        <ul class="sidebar__menu__list">
+          <li class="sidebar__menu__list__item active">
+            <a href="#">
+              <svg class="list__item__icon">
+                <use xlink:href="/assets/svg/sidebar-sprite.svg#home"></use>
+              </svg>
+              <p>سفارش های من</p>
+            </a>
+          </li>
+          <li class="sidebar__menu__list__item">
+            <a href="#">
+              <svg class="list__item__icon">
+                <use xlink:href="/assets/svg/sidebar-sprite.svg#user2"></use>
+              </svg>
+              <p>اطلاعات حساب کاربری</p>
+
+            </a>
+          </li>
+          <li class="sidebar__menu__list__item ">
+            <a href="#" class="item__list__massages">
+              <svg class="list__item__icon">
+                <use xlink:href="/assets/svg/sidebar-sprite.svg#massage"></use>
+              </svg>
+              <p>پیام ها</p>
+              <span>۳ </span>
+            </a>
+          </li>
+          <li class="sidebar__menu__list__item">
+            <a href="#">
+              <svg class="list__item__icon">
+                <use xlink:href="/assets/svg/sidebar-sprite.svg#ring"></use>
+              </svg>
+              <p>نظرات من</p>
+            </a>
+          </li>
+          <li class="sidebar__menu__list__item">
+            <a href="#">
+              <svg class="list__item__icon">
+                <use xlink:href="/assets/svg/sidebar-sprite.svg#exit"></use>
+              </svg>
+              <p>خروج</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="dashboard__infos">
+
+      <div class="infos__header-mobileTitile">
+        <i class="fa-solid fa-arrow-right"></i>
+        <h3>سفارش های من</h2>
+          <div></div>
+
+      </div>
+      <div class="infos__header">
+        <div class="infos__header__sec active">
+          <div class="infos__header__sec__icon">
+            <svg class="infos__header__icon">
+              <use xlink:href="/assets/svg/main-sprite.svg#time"></use>
+            </svg>
+          </div>
+          <div class="infos__header__sec__detail">
+            <p>در حال پردازش</p>
+            <p><span>۵</span> سفارش</p>
+          </div>
+
+        </div>
+
+        <div class="infos__header__sec ">
+          <div class="infos__header__sec__icon">
+            <svg class="infos__header__icon">
+              <use xlink:href="/assets/svg/main-sprite.svg#tik"></use>
+            </svg>
+          </div>
+          <div class="infos__header__sec__detail">
+            <p>تحویل شده</p>
+            <p><span>۴</span> سفارش</p>
+          </div>
+        </div>
+
+        <div class="infos__header__sec">
+          <div class="infos__header__sec__icon">
+            <svg class="infos__header__icon">
+              <use xlink:href="/assets/svg/main-sprite.svg#return"></use>
+            </svg>
+          </div>
+          <div class="infos__header__sec__detail">
+            <p>مرجوعی</p>
+            <p><span>۲</span> سفارش</p>
+          </div>
+        </div>
+
+        <div class="infos__header__sec">
+          <div class="infos__header__sec__icon">
+            <svg class="infos__header__icon">
+              <use xlink:href="/assets/svg/main-sprite.svg#close"></use>
+            </svg>
+          </div>
+          <div class="infos__header__sec__detail">
+            <p>لغو شده</p>
+            <p><span>۳</span> سفارش</p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="infos__orders-sec">
+        <div class="infos__orders-sec__order">
+          <div class="order__mode">
+            <p>در حال پردازش</p>
+          </div>
+          <div class="order__infos">
+            <div class="order__infos__right">
+              <div class="order__infos__code">
+                <span>:کد سفارش</span>
+                <span>۲۱۶۵۴۴۹</span>
+              </div>
+              <div class="order__infos__date">
+                <span>:تاریخ تحویل سفارش</span>
+                <span>۱۴۰۳/۰۵/۰۷</span>
+              </div>
+            </div>
+            <div class="order__infos__price">
+              <span>۱,۵۵۰,۰۰۰</span>
+              <span>تومان</span>
+            </div>
+          </div>
+          <div class="order__details">
+            <div class="order__details__right">
+              <div class="order__details__img">
+                <img src="" alt="" />
+              </div>
+            </div>
+            <div class="order__details__btn">
+              <i class="fa-solid fa-arrow-left"></i>
+              <a href="#">جزئیات سفارش</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>
